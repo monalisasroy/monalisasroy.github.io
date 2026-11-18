@@ -41,7 +41,7 @@ nav.bar .inner {
   max-width: 44rem; margin: 0 auto; padding: 0.7rem 1.5rem; font-size: var(--fs-small);
   display: flex; flex-wrap: wrap; gap: 0.3rem 1.4rem; align-items: baseline;
 }
-nav.bar .home { color: var(--ink-soft); border: none; margin-right: auto; }
+nav.bar .home { color: var(--ink-tint); border: none; margin-right: auto; }
 nav.bar .home:hover { color: var(--ink); }
 nav.bar a.sec { color: var(--ink-soft); border: none; letter-spacing: 0.02em; transition: color 0.25s ease; }
 nav.bar a.sec:hover { color: var(--ink); }
