@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monalisa Singh Roy</title>
+<meta name="description" content="Monalisa Singh Roy, PhD in quantum many-body physics, Munich. Quantum and quantum-inspired solutions for simulations, optimisation, forecasting, and studying complex and emergent phenomena.">
+<meta name="author" content="Monalisa Singh Roy">
+<meta property="og:title" content="Monalisa Singh Roy">
+<meta property="og:description" content="Monalisa Singh Roy, PhD in quantum many-body physics, Munich. Quantum and quantum-inspired solutions for simulations, optimisation, forecasting, and studying complex and emergent phenomena.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<nav class="bar" aria-label="Sections">
+  <div class="inner">
+    <a class="home" href="#top">Monalisa S. Roy</a>
+    <a class="sec" href="#about">About</a>
+    <a class="sec" href="#vision">Vision</a>
+    <a class="sec" href="#research">Research</a>
+    <a class="sec" href="#papers">Papers</a>
+    <a class="sec" href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="page" id="top">
+
+  <header class="masthead">
+    <div class="who">
+      <img src="assets/img/photo.webp" alt="Portrait of Monalisa Singh Roy" width="132" height="132">
+      <div class="txt">
+        <h1><span class="first">Monalisa</span> <span class="last">Singh Roy</span></h1>
+        <p class="degree">PhD, Quantum many-body physics</p>
+        <p class="standfirst">Quantum and quantum-inspired solutions for simulations, optimisation, forecasting, and studying complex and emergent phenomena.</p>
+      </div>
+    </div>
+    <figure class="cone">
+      <canvas id="cone" role="img" aria-label="Probability of finding a single flipped spin along a chain of 121 sites as time runs to the right, forming a light cone with bright fringes at its edges."></canvas>
+      <figcaption>A single flipped spin spreading along a chain of 121 sites, with time running to the right: the probability |J<sub>j</sub>(2Jt)|<sup>2</sup> of finding it at site j. The bright fringes at the edges of the light cone are a fold caustic, the same mathematics as the bright lines of light on the floor of a swimming pool.</figcaption>
+    </figure>
+  </header>
+
+  <section id="about" class="reveal" aria-labelledby="about-h">
+    <h2 id="about-h">About</h2>
+    <p>Finding a low-cost route through a network, estimating the probability of a rare and extreme event, simulating a strongly correlated material: each of these means searching among possibilities whose number grows exponentially with the size of the problem. Tensor networks and certain quantum circuits can find and use the low-dimensional structure hidden inside that growth. I have developed these methods for more than ten years and applied them across physics and industry, in finance, logistics, mobility and energy.</p>
+    <p>In my PhD, I wrote density-matrix renormalisation group (DMRG) codes from scratch for topological one-dimensional Fermi gases, frustrated spin chains and Y-junctions of quantum wires. During my postdoc I worked on entanglement dynamics under noise and measurement, neural-network error mitigation for near-term quantum circuits, and international collaborations on quantum caustics and monitored quantum circuits. My pre-PhD research was in nonequilibrium statistical physics: self-organised criticality, non-Markovian dynamics, cascade propagation on networks, avalanche and first-passage statistics, and heavy-tail fitting. These carry over to quantitative risk, contagion and systemic-risk modelling, and rare-event probability, in weather, finance and logistics alike.</p>
+    <dl class="themes qa">
+      <dt>Why do we expect quantum computers or algorithms to outperform classical computers?</dt>
+      <dd>
+        <p>The computers we use every day store each yes-or-no choice as a bit, 0 or 1. Fifty such choices already give about a million billion combinations, and each added choice doubles the count. Searching them without a shortcut means checking one combination after another, and a supercomputer that checks many in parallel only divides a haystack that keeps doubling. A qubit can be 0 and 1 at the same time, in what physicists call a superposition, so the state of many qubits needs one number for every combination of their 0s and 1s.</p>
+        <p>To follow 40 qubits exactly, an ordinary computer has to store about a trillion numbers, close to 18 terabytes; for 60 qubits it needs about 18 million terabytes, far beyond the memory of the largest supercomputers. Sixty qubits on a quantum computer hold all those numbers at once. When the problem is encoded and the machine steered correctly, by quantum annealing, a quantum walk or another quantum algorithm, interference gathers the probability onto the right answer. Reading the qubits then most likely gives the needle in that haystack, without the straws being checked one by one. Where information moves through the machine only a little, tensor networks can still follow it step by step on a laptop or a cluster; where it moves widely, they cannot.</p>
+        <p>While &ldquo;quantum&rdquo; seems to be the buzzword today, &ldquo;logical qubit&rdquo; counts are expected to remain limited for the next few years. On that budget, a quantum circuit that fails to outperform a well-tuned classical baseline is hardly the end of this story. On several problem classes and specific instances, quantum-inspired tensor-network methods or hybrid classical-quantum methods already outperform Monte Carlo sampling, which suggests that progress on today&rsquo;s state of the art does not have to wait for million-qubit fault-tolerant hardware. For anyone with a hard problem in hand, and for those of us building the tools, useful work can begin now, and its reach will grow as quantum hardware matures.</p>
+      </dd>
+    </dl>
+    <p>In addition to scientific papers, proposals and coding entire repositories (even in pre-AI days!), I also write quantum stories for my dad, and I enjoy discussing &ldquo;quantum&rdquo; with anyone who makes small talk with me, so beware if we cross paths!</p>
+  </section>
+
+  <section id="vision" class="reveal" aria-labelledby="vision-h">
+    <h2 id="vision-h">Vision</h2>
+    <p class="lede">Quantum solutions for humans.</p>
+    <p>Small gains on hard problems are worth a great deal, to companies, to clean energy and to people in need. One mile less per driver per day is worth up to 50 million dollars a year to <a href="https://www.bsr.org/en/case-studies/center-for-technology-and-sustainability-orion-technology-ups">UPS</a>; better forecasts raised the value of <a href="https://deepmind.google/discover/blog/machine-learning-can-boost-the-value-of-wind-energy/">Google&rsquo;s wind power</a> by a fifth; congestion on <a href="https://www.pv-magazine.de/2024/05/17/kosten-fuer-netzengpassmanagement-2023-um-ein-viertel-gesunken/">Germany&rsquo;s power grid</a> cost about 3 billion euros in 2023; and about three quarters of the cost of a <a href="https://www.emerald.com/insight/content/doi/10.1108/JHLSCM-03-2022-0039/full/html">humanitarian response</a> lies in its supply chain. These are exciting times to bring quantum computing, and the methods it has inspired, to such problems, and to say plainly where they help and where a classical computer is enough.</p>
+    <p>I build the methods on both sides of that line (classical vs. quantum) and have often walked the fine line (hybrid classical-quantum) to bring out the best of both worlds. Most of my works are aimed at understanding how information moves in any quantum system, and applying that understanding to make better sense of real-world problems and get better solutions for them.</p>
+  </section>
+
+  <section id="research" class="reveal" aria-labelledby="research-h">
+    <h2 id="research-h">Research</h2>
+    <dl class="themes">
+      <dt>Strongly correlated fermions</dt>
+      <dd>
+        <p>Electrons in a metal and atoms cooled close to absolute zero are fermions, and when they push or pull on one another strongly, they behave as a crowd that no single particle can explain. Superconductors, which conduct electricity with no loss at all, come out of such crowds, and forty years after high-temperature superconductors were found in 1986, how they work is still debated. A material that did the same at room temperature would change power lines, medical scanners and computers, and simulating such materials is among the first tasks people hope quantum computers will take on.</p>
+        <p>We built fully fermionic simulation codes, and with them showed that a proposed platform for Majorana qubits loses its protection to a single impurity. How such pairing behaves with heat, with disorder and in two dimensions is the question we are asking. <a class="related" href="#papers" data-goto="pairing topology wires magnets">Related papers</a></p>
+      </dd>
+      <dt>How information spreads</dt>
+      <dd>
+        <p>A change made to one qubit reaches the others through entanglement at a finite speed, filling a light cone like the one drawn at the top of this page, and in chaotic systems that information scrambles until no local measurement can read it back, the same scrambling that physicists study in black holes. That speed limit caps how quickly distant qubits can be entangled, and errors spread along those paths too.</p>
+        <p>Among other things, we proposed a &ldquo;litmus test&rdquo; for noisy quantum processors, based on a universal shape at the edge of that light cone, and we are tracing such fronts into disorder, into chaos and under continuous observation. <a class="related" href="#papers" data-goto="dynamics">Related papers</a></p>
+      </dd>
+      <dt>Measurement and reset</dt>
+      <dd>
+        <p>In the quantum world, looking changes what is there. A measurement disturbs the state it reads, measurements repeated often enough can freeze a system in place, and on many qubits they can switch the whole system between phases, from one rich in entanglement to one that holds little of it. Resetting has a classical counterpart, in which restarting a search at random times can make it find its target sooner. Every quantum computer that corrects its own errors has to measure and reset qubits in the middle of a calculation, so these interruptions decide how much of its entanglement, and of its usefulness, survives.</p>
+        <p>Along the way, we showed that a record of when each reset happened reveals entanglement that would otherwise take exponentially many repeated runs to see, and tested it on superconducting qubits. We are working out where to place a measurement, what each one costs, and what can be learnt from what was ruled out. <a class="related" href="#papers" data-goto="entanglement">Related papers</a></p>
+      </dd>
+      <dt>Tensor networks beyond quantum physics</dt>
+      <dd>
+        <p>Most of the possibilities in a large problem never matter, and a tensor network writes down only the part that does, as a chain of small matrices. Developed largely to describe entangled quantum states, the same mathematics compresses machine-learning models, prices financial products, solves the equations of fluid flow and simulates the quantum computers being built. It runs on the computers we already have, and the size of the matrices a problem needs is an early sign of how hard that problem is.</p>
+        <p>We use tensor networks for quantum dynamics, random processes and optimisation, and are extending them to inference under noise and to rare paths through disordered networks. <a class="related" href="#papers" data-goto="tensor">Related papers</a></p>
+      </dd>
+      <dt>Rare and extreme events</dt>
+      <dd>
+        <p>Floods, blackouts, epidemics and market crashes are rare, yet they cause most of the damage, and their sizes follow heavy-tailed laws in which the extreme is far more likely than a bell curve would suggest. A sandpile fed one grain at a time organises itself to the edge of collapse, where a single grain can set off an avalanche of any size, and a similar picture describes cascades of failure in power grids and in financial networks. Planning for the average day leaves a city, a grid or a portfolio exposed on the one day that matters.</p>
+        <p>Our own Monte Carlo codes model avalanches, epidemics and cooperation on networks, and now we have state-of-the-art tensor-network machinery to do that even better, computing the odds of a rare event directly from the rules of the process. We are taking that machinery to supply chains and to the crowded orbits of satellites, where one failure can trigger another.</p>
+      </dd>
+      <dt>Optimisation on quantum and classical hardware</dt>
+      <dd>
+        <p>Choosing the best schedule, route or layout often involves more options than there are atoms in the observable universe, and it is the daily work of railways, airlines, delivery fleets and power grids. Many of these problems are, mathematically, a set of magnets that cannot all be satisfied at once, looking for its lowest-energy arrangement, which is what a quantum processor of interacting qubits is built to explore. Whether that brings an advantage, for which problems and at which size, is still an open question, answered one problem at a time.</p>
+        <p>We have benchmarked quantum, quantum-inspired and classical solvers side by side on problems from industry, and let small quantum circuits guide a classical solver on networks too large for any single circuit. Wind-farm layouts, rail timetables and the planning of power grids are on our list.</p>
+      </dd>
+      <dt>Forecasting with quantum systems</dt>
+      <dd>
+        <p>Almost any rich physical system can be taught to forecast. In 2003, the ripples in a bucket of water, read by a simple classifier, were used to tell spoken words apart. Reservoir computing trains only that readout, and a quantum system offers a reservoir whose possible states grow exponentially with its size; a quantum reservoir of 108 atoms has already been run. Forecasts of wind, power demand and market volatility shape daily decisions in energy and finance, and chaotic series like the weather are the hardest of all.</p>
+        <p>We design such forecasters in simulation, using tensor networks to go beyond the sizes ordinary methods allow, and tune them with what monitored circuits teach about entanglement. The first series we test them on are wind, weather and volatility.</p>
+      </dd>
+    </dl>
+
+    <h3 class="sub" id="journey">Journey</h3>
+    <ol class="timeline">
+      <li><div class="span" aria-label="Apr 2025 to Now"><span class="to">Now</span><span class="bar" aria-hidden="true"></span><span class="from">Apr 2025</span></div><div class="what">Quantum Algorithms Engineer, <a href="https://www.planqc.eu">planqc</a>, Munich
+        <span class="meta">Quantum, quantum-inspired and hybrid optimisation: mathematical formulation, solver development, benchmarks against classical solvers, experiments on quantum hardware and a written recommendation of the method for each case. Optimisation work package of <a href="https://qci.dlr.de/en/d-fine-planqc-partner-support-qcmobility-for-more-efficient-and-reliable-rail-transport/">QCMobility</a>.</span></div></li>
+      <li><div class="span" aria-label="Jun 2021 to Mar 2025"><span class="to">Mar 2025</span><span class="bar" aria-hidden="true"></span><span class="from">Jun 2021</span></div><div class="what">Postdoctoral researcher, <a href="https://www.biu.ac.il">Bar-Ilan University</a>, Israel
+        <span class="meta">In the groups of Prof. Jonathan Ruhman, Prof. Emanuele Dalla Torre and Prof. Efrat Shimshoni. Collaborations on stochastic resets and the dynamics they induce with Prof. Eli Barkai, Prof. Satya N. Majumdar and Prof. Manas Kulkarni, taken onto IBM superconducting qubits with Prof. Sabine Tornow at Forschungsinstitut CODE in Munich; and on quantum caustics with Prof. Duncan O&rsquo;Dell.</span></div></li>
+      <li><div class="span" aria-label="Jan 2024 to Mar 2024"><span class="to">Mar 2024</span><span class="bar" aria-hidden="true"></span><span class="from">Jan 2024</span></div><div class="what">Visiting researcher, <a href="https://www.mpq.mpg.de">Max Planck Institute of Quantum Optics</a>, Garching
+        <span class="meta">Tensor-network simulation of entanglement spreading in dual quantum circuits, with Prof. J. Ignacio Cirac and Dr. Mari Carmen Bañuls.</span></div></li>
+      <li><div class="span" aria-label="2015 to 2021"><span class="to">2021</span><span class="bar" aria-hidden="true"></span><span class="from">2015</span></div><div class="what">PhD in theoretical physics, <a href="https://www.bose.res.in">S. N. Bose National Centre for Basic Sciences</a>, Kolkata
+        <span class="meta">Thesis on interactions, correlations and competing orders in one-dimensional quantum wires and quantum gases, with Prof. Manoranjan Kumar. Collaborations on Majorana modes in Fermi gases with Prof. Jay D. Sau and Prof. Sumanta Tewari, on junctions of quantum wires with Prof. Sourin Das, on frustrated magnets with Prof. Zolt&aacute;n G. Soos, and on helical liquids with Prof. Sujit Sarkar.</span></div></li>
+      <li><div class="span" aria-label="Aug 2014 to Jul 2015"><span class="to">Jul 2015</span><span class="bar" aria-hidden="true"></span><span class="from">Aug 2014</span></div><div class="what">Postgraduate researcher in nonequilibrium statistical physics, S. N. Bose National Centre, Kolkata
+        <span class="meta">With Prof. S. S. Manna and Dr. Muktish Acharyya (Presidency University), with self-written Monte Carlo codes for the prisoner&rsquo;s dilemma and opinion formation on networks, the spread of disease, fibre bundle models of how materials break, a random-field Ising magnet driven by travelling magnetic waves, econophysics, and time-series analysis for predicting extreme events.</span></div></li>
+      <li><div class="span" aria-label="2012 to 2014"><span class="to">2014</span><span class="bar" aria-hidden="true"></span><span class="from">2012</span></div><div class="what">MSc in physical sciences, S. N. Bose National Centre for Basic Sciences, Kolkata
+        <span class="meta">Admitted with All India Rank 56 in physics and an all-India scholarship for integrated PhD research. Thesis research on self-organised criticality, with sandpile models on scale-free networks and the statistics of their avalanches, and on how a magnetic film, modelled as a two-dimensional Ising magnet, responds to plane and spherical magnetic waves sweeping across it.</span></div></li>
+      <li><div class="span" aria-label="2009 to 2012"><span class="to">2012</span><span class="bar" aria-hidden="true"></span><span class="from">2009</span></div><div class="what">BSc in physics, Bethune College, University of Calcutta, Kolkata
+        <span class="meta">Winner of the all-India INFOCOM science and technology competition in 2010, with a team proposal for do-it-yourself solar cells made with home-made vegetable dyes.</span></div></li>
+    </ol>
+  </section>
+
+  <section id="papers" class="reveal" aria-labelledby="papers-h">
+    <h2 id="papers-h">Papers</h2>
+    <div class="tagbar" role="group" aria-label="Filter papers by subject"><button type="button" class="tag" data-tag="all" aria-pressed="true">All</button><button type="button" class="tag" data-tag="dynamics" aria-pressed="false">Quantum dynamics</button><button type="button" class="tag" data-tag="entanglement" aria-pressed="false">Entanglement</button><button type="button" class="tag" data-tag="hardware" aria-pressed="false">Quantum hardware</button><button type="button" class="tag" data-tag="stochastic" aria-pressed="false">Stochastic processes</button><button type="button" class="tag" data-tag="tensor" aria-pressed="false">Tensor networks</button><button type="button" class="tag" data-tag="pairing" aria-pressed="false">Pairing and superfluidity</button><button type="button" class="tag" data-tag="topology" aria-pressed="false">Topology and Majorana modes</button><button type="button" class="tag" data-tag="magnets" aria-pressed="false">Quantum magnets</button><button type="button" class="tag" data-tag="wires" aria-pressed="false">Quantum wires</button></div>
+    <ul class="refs" id="paperlist">
+      <li data-tags="entanglement stochastic dynamics hardware"><a href="https://arxiv.org/abs/2610.40638">Entanglement diagnostics of stochastic-resetting steady states: theory and measurement on superconducting qubits</a>
+        <span class="desc">Qubits reset at random settle into steady states on which three standard entanglement measures disagree. The gap between two of them equals the information one part of the system holds about the time since the last reset.</span>
+        <span class="meta">J. Murauer, S. Tornow, M. Kulkarni, E. Barkai, S. N. Majumdar, M. Singh Roy. arXiv:2610.40638.</span><span class="tags"><button type="button" class="tag" data-tag="entanglement">Entanglement</button><button type="button" class="tag" data-tag="stochastic">Stochastic processes</button><button type="button" class="tag" data-tag="dynamics">Quantum dynamics</button><button type="button" class="tag" data-tag="hardware">Quantum hardware</button></span></li>
+      <li data-tags="dynamics tensor"><a href="https://arxiv.org/abs/2410.06803">Universal scaling of quantum caustics in the dynamics of interacting particles</a>
+        <span class="desc">A disturbance spreading along a chain of interacting quantum particles has bright fringes at its front, a caustic. They follow a universal scaling law with exponent 2/3, predicted from optics and confirmed in simulations.</span>
+        <span class="meta">M. Singh Roy, J. Mumford, A. Ozer, O. Porat, D. H. J. O&#x27;Dell, E. G. Dalla Torre. Physical Review A 114, 022201.</span><span class="tags"><button type="button" class="tag" data-tag="dynamics">Quantum dynamics</button><button type="button" class="tag" data-tag="tensor">Tensor networks</button></span></li>
+      <li data-tags="pairing tensor"><a href="https://arxiv.org/abs/2108.03314">Fulde-Ferrell-Larkin-Ovchinnikov phase in interacting one-dimensional Fermi gas</a>
+        <span class="desc">Attracting fermions in one dimension, placed in a magnetic field, pair up with a net momentum, so that pairing and magnetism coexist. DMRG finds this Fulde-Ferrell-Larkin-Ovchinnikov phase over a wide range of conditions.</span>
+        <span class="meta">M. Singh Roy, M. Kumar. Physical Review B 110, 085159.</span><span class="tags"><button type="button" class="tag" data-tag="pairing">Pairing and superfluidity</button><button type="button" class="tag" data-tag="tensor">Tensor networks</button></span></li>
+      <li data-tags="topology pairing"><a href="https://arxiv.org/abs/1904.03660">Fermion parity gap and exponential ground state degeneracy of the one-dimensional Fermi gas with intrinsic attractive interaction</a>
+        <span class="desc">A trapped one-dimensional Fermi gas with spin-orbit coupling shows the degenerate ground states expected of Majorana modes. A single local impurity lifts that degeneracy, a caution for topological qubits on this platform.</span>
+        <span class="meta">M. Singh Roy, M. Kumar, J. D. Sau, S. Tewari. Physical Review B 102, 125135.</span><span class="tags"><button type="button" class="tag" data-tag="topology">Topology and Majorana modes</button><button type="button" class="tag" data-tag="pairing">Pairing and superfluidity</button></span></li>
+      <li data-tags="wires tensor"><a href="https://arxiv.org/abs/1912.13040">Tunneling density of states in Y junction of Tomonaga-Luttinger liquid wires: a density matrix renormalization group study</a>
+        <span class="desc">Where three interacting quantum wires meet, attraction drives the junction to a state the standard analytic method cannot describe, and DMRG shows that tunnelling into it is enhanced, for fermions and bosons alike.</span>
+        <span class="meta">M. Singh Roy, M. Kumar, S. Das. Physical Review B 102, 035130.</span><span class="tags"><button type="button" class="tag" data-tag="wires">Quantum wires</button><button type="button" class="tag" data-tag="tensor">Tensor networks</button></span></li>
+      <li data-tags="magnets tensor"><a href="https://arxiv.org/abs/2001.05384">Modeling the spin-Peierls transition of spin-1/2 chains with correlated states: J1-J2 model, CuGeO3 and TTF-CuS4C4(CF3)4</a>
+        <span class="desc">On cooling, a spin-Peierls chain distorts so that neighbouring spins pair up. A frustrated spin-chain model matches the measured magnetic response of CuGeO<sub>3</sub> and an organic compound, and gives the neutron spectra of CuGeO<sub>3</sub>.</span>
+        <span class="meta">S. K. Saha, M. Singh Roy, M. Kumar, Z. G. Soos. Physical Review B 101, 054411.</span><span class="tags"><button type="button" class="tag" data-tag="magnets">Quantum magnets</button><button type="button" class="tag" data-tag="tensor">Tensor networks</button></span></li>
+      <li data-tags="topology magnets"><a href="https://arxiv.org/abs/1711.01766">Characterization of Majorana-Ising phase transition in a helical liquid system</a>
+        <span class="desc">In a helical liquid, a one-dimensional system whose spin direction is locked to its direction of motion, a magnetic field can drive a transition to a phase that can host Majorana zero modes. The work maps its complete phase diagram.</span>
+        <span class="meta">S. K. Saha, D. Dey, M. Singh Roy, S. Sarkar, M. Kumar. Journal of Magnetism and Magnetic Materials 475, 257.</span><span class="tags"><button type="button" class="tag" data-tag="topology">Topology and Majorana modes</button><button type="button" class="tag" data-tag="magnets">Quantum magnets</button></span></li>
+    </ul>
+    <p class="note">Full list on <a href="https://scholar.google.com/citations?user=dZHej74AAAAJ&amp;hl=en">Google Scholar</a>.</p>
+    <p class="span-note">These papers, and the work behind them, span statistical physics, condensed matter, quantum information and many-body physics, joined by simulation, from Monte Carlo and exact methods to tensor networks and quantum circuits. The applications of most interest are in logistics, energy, finance and new materials; in applied industrial research, they included the optimisation work of <a href="https://qci.dlr.de/en/d-fine-planqc-partner-support-qcmobility-for-more-efficient-and-reliable-rail-transport/">QCMobility</a>, testing quantum algorithms and benchmarking them vs. classical on real logistics and mobility data and problems.</p>
+
+    <h3 class="sub" id="collaborations">Collaborations</h3>
+    <div class="logos">
+      <img src="assets/img/logos/forschungsinstitut-code-universitat-der-bundeswehr-munchen.webp" alt="Forschungsinstitut CODE, Universität der Bundeswehr München" title="Forschungsinstitut CODE, Universität der Bundeswehr München">
+      <img src="assets/img/logos/bar-ilan-university.webp" alt="Bar-Ilan University" title="Bar-Ilan University">
+      <img src="assets/img/logos/universite-paris-saclay.webp" alt="Université Paris-Saclay" title="Université Paris-Saclay">
+      <img src="assets/img/logos/max-planck-institute-for-the-physics-of-complex-systems.webp" alt="Max Planck Institute for the Physics of Complex Systems" title="Max Planck Institute for the Physics of Complex Systems">
+      <img src="assets/img/logos/max-planck-institute-of-quantum-optics.webp" alt="Max Planck Institute of Quantum Optics" title="Max Planck Institute of Quantum Optics">
+      <img src="assets/img/logos/technical-university-of-munich.webp" alt="Technical University of Munich" title="Technical University of Munich">
+      <img src="assets/img/logos/munich-quantum-valley.webp" alt="Munich Quantum Valley" title="Munich Quantum Valley">
+      <img src="assets/img/logos/mcmaster-university.webp" alt="McMaster University" title="McMaster University">
+      <img src="assets/img/logos/university-of-oklahoma.webp" alt="University of Oklahoma" title="University of Oklahoma">
+      <img src="assets/img/logos/university-of-gottingen.webp" alt="University of Göttingen" title="University of Göttingen">
+      <img src="assets/img/logos/university-of-maryland.webp" alt="University of Maryland" title="University of Maryland">
+      <img src="assets/img/logos/clemson-university.webp" alt="Clemson University" title="Clemson University">
+      <img src="assets/img/logos/princeton-university.webp" alt="Princeton University" title="Princeton University">
+      <img src="assets/img/logos/international-centre-for-theoretical-physics.webp" alt="International Centre for Theoretical Physics" title="International Centre for Theoretical Physics">
+      <img src="assets/img/logos/university-of-padova.webp" alt="University of Padova" title="University of Padova">
+      <img src="assets/img/logos/university-of-calcutta.webp" alt="University of Calcutta" title="University of Calcutta">
+      <img src="assets/img/logos/s-n-bose-national-centre-for-basic-sciences.webp" alt="S. N. Bose National Centre for Basic Sciences" title="S. N. Bose National Centre for Basic Sciences">
+      <img src="assets/img/logos/indian-institute-of-science.webp" alt="Indian Institute of Science" title="Indian Institute of Science">
+      <img src="assets/img/logos/international-centre-for-theoretical-sciences.webp" alt="International Centre for Theoretical Sciences" title="International Centre for Theoretical Sciences">
+    </div>
+
+    <h3 class="sub" id="presentations">Presentations</h3>
+    <dl class="people venues">
+      <dt>Germany</dt><dd>Max Planck Institute of Quantum Optics, Max Planck Institute for the Physics of Complex Systems, Technical University of Munich, Georg-August-Universität Göttingen, Universität der Bundeswehr München, Fraunhofer-Gesellschaft, Munich Center for Quantum Science and Technology, Falling Walls Foundation</dd>
+      <dt>Italy</dt><dd>International Centre for Theoretical Physics, SISSA, Università degli Studi di Padova</dd>
+      <dt>Israel</dt><dd>Weizmann Institute of Science, Technion, Hebrew University of Jerusalem, Ben-Gurion University of the Negev</dd>
+      <dt>India</dt><dd>Indian Institute of Science, Tata Institute of Fundamental Research, S. N. Bose National Centre for Basic Sciences, Institute of Physics Bhubaneswar</dd>
+      <dt>Meetings</dt><dd>American Physical Society, German Physical Society, Israel Physical Society</dd>
+    </dl>
+    <p class="divider" aria-hidden="true">- - -</p>
+    <ul class="refs talks">
+      <li><span class="when">Nov 2026</span>GIFTS Berlin and Falling Walls Foundation, Berlin
+        <span class="meta">Quantum caustics in a quantum circuit: universal rule of 2/3 and a litmus test for noisy quantum computers</span><span class="tags"><button type="button" class="tag" data-tag="dynamics">Quantum dynamics</button><button type="button" class="tag" data-tag="hardware">Quantum hardware</button></span></li>
+      <li><span class="when">Oct 2026</span>Paris-Munich Quantum Workshop, Institute for Advanced Study, Technical University of Munich, Garching
+        <span class="meta">Entanglement diagnostics of stochastic-resetting steady states: theory and measurement on superconducting qubits</span><span class="tags"><button type="button" class="tag" data-tag="entanglement">Entanglement</button><button type="button" class="tag" data-tag="stochastic">Stochastic processes</button><button type="button" class="tag" data-tag="hardware">Quantum hardware</button></span></li>
+      <li><span class="when">Oct 2024</span>Forschungsinstitut CODE, Universität der Bundeswehr München
+        <span class="meta">Effect of monitoring and measurement-induced phase transitions in quantum circuits</span><span class="tags"><button type="button" class="tag" data-tag="entanglement">Entanglement</button><button type="button" class="tag" data-tag="dynamics">Quantum dynamics</button></span></li>
+      <li><span class="when">Oct 2024</span>Quantum Meets Classical, Max Planck Institute for the Physics of Complex Systems, Dresden
+        <span class="meta">Quantum caustics: a diagnostic tool for quantum phase transitions in spin chains</span><span class="tags"><button type="button" class="tag" data-tag="dynamics">Quantum dynamics</button><button type="button" class="tag" data-tag="tensor">Tensor networks</button></span></li>
+      <li><span class="when">Mar 2024</span>DPG Spring Meeting, Berlin, focus session on quantum interactive dynamics
+        <span class="meta">Extended critical phase of a monitored Ising chain under no-click dissipation</span><span class="tags"><button type="button" class="tag" data-tag="entanglement">Entanglement</button><button type="button" class="tag" data-tag="dynamics">Quantum dynamics</button></span></li>
+      <li><span class="when">Mar 2024</span>APS March Meeting, Minneapolis
+        <span class="meta">Measurement-induced phase transition with an extended log-law phase in an integrability-broken transverse-field Ising model</span><span class="tags"><button type="button" class="tag" data-tag="entanglement">Entanglement</button><button type="button" class="tag" data-tag="dynamics">Quantum dynamics</button></span></li>
+      <li><span class="when">Feb 2024</span>Institute for Theoretical Physics, Georg-August-Universität Göttingen
+        <span class="meta">Measurement-induced phase transitions in many-body systems</span><span class="tags"><button type="button" class="tag" data-tag="entanglement">Entanglement</button><button type="button" class="tag" data-tag="dynamics">Quantum dynamics</button></span></li>
+      <li><span class="when">Jan 2024</span>Quantum computing workshop of DESY, Universität der Bundeswehr München and the Fraunhofer-Gesellschaft, Munich
+        <span class="meta">Correlation exponents and mutual information across measurement-induced transitions</span><span class="tags"><button type="button" class="tag" data-tag="entanglement">Entanglement</button><button type="button" class="tag" data-tag="dynamics">Quantum dynamics</button><button type="button" class="tag" data-tag="hardware">Quantum hardware</button></span></li>
+      <li><span class="when">Aug 2023</span>School on Quantum Many-Body Phenomena out of Equilibrium, International Centre for Theoretical Physics, Trieste
+        <span class="meta">Volume law, log law and area law in a monitored transverse-field Ising chain</span><span class="tags"><button type="button" class="tag" data-tag="entanglement">Entanglement</button><button type="button" class="tag" data-tag="dynamics">Quantum dynamics</button></span></li>
+      <li><span class="when">Jul 2023</span>Indo-Israeli Meeting 2023, Weizmann Institute of Science, Rehovot
+        <span class="meta">Monitoring against unitary dynamics: the entanglement transition of a transverse-field Ising chain</span><span class="tags"><button type="button" class="tag" data-tag="entanglement">Entanglement</button><button type="button" class="tag" data-tag="dynamics">Quantum dynamics</button></span></li>
+      <li><span class="when">Jun 2023</span>NISQ Algorithms and Hardware 2023, Hebrew University of Jerusalem, Neve Ilan
+        <span class="meta">Entanglement phase transition and logarithmic scaling in monitored quantum spin chains</span><span class="tags"><button type="button" class="tag" data-tag="entanglement">Entanglement</button><button type="button" class="tag" data-tag="hardware">Quantum hardware</button></span></li>
+      <li><span class="when">May 2023</span>Topology and Physics on Mount Carmel, Technion, Haifa
+        <span class="meta">Phase diagram of a monitored non-integrable Ising chain</span><span class="tags"><button type="button" class="tag" data-tag="entanglement">Entanglement</button><button type="button" class="tag" data-tag="magnets">Quantum magnets</button></span></li>
+      <li><span class="when">Sep 2022</span>DPG Conference, Regensburg
+        <span class="meta">Entanglement phase transitions in correlated one-dimensional spin chains</span><span class="tags"><button type="button" class="tag" data-tag="entanglement">Entanglement</button><button type="button" class="tag" data-tag="magnets">Quantum magnets</button></span></li>
+      <li><span class="when">Mar 2021</span>Thesis colloquium, S. N. Bose National Centre for Basic Sciences, Kolkata
+        <span class="meta">Correlated one-dimensional quantum wires and Fermi gases: junctions, pairing and topology</span><span class="tags"><button type="button" class="tag" data-tag="wires">Quantum wires</button><button type="button" class="tag" data-tag="pairing">Pairing and superfluidity</button><button type="button" class="tag" data-tag="topology">Topology and Majorana modes</button></span></li>
+      <li><span class="when">Feb 2021</span>Max Planck Institute of Quantum Optics, Garching (online)
+        <span class="meta">FFLO phase and exponential ground state degeneracy in a one-dimensional Fermi gas with attractive interactions</span><span class="tags"><button type="button" class="tag" data-tag="pairing">Pairing and superfluidity</button><button type="button" class="tag" data-tag="topology">Topology and Majorana modes</button></span></li>
+      <li><span class="when">Dec 2020</span>Young Investigator Meet on Quantum Condensed Matter Theory, Institute of Physics, Bhubaneswar (online)
+        <span class="meta">FFLO phase in an interacting one-dimensional Fermi gas</span><span class="tags"><button type="button" class="tag" data-tag="pairing">Pairing and superfluidity</button></span></li>
+      <li><span class="when">Sep 2020</span>Q-MAT 2020, S. N. Bose National Centre for Basic Sciences, Kolkata (online)
+        <span class="meta">Interactions, correlations and competing orders in strongly correlated one-dimensional quantum gases</span><span class="tags"><button type="button" class="tag" data-tag="pairing">Pairing and superfluidity</button><button type="button" class="tag" data-tag="topology">Topology and Majorana modes</button></span></li>
+      <li><span class="when">Jul 2019</span>Q-MAT 2019, Indian Institute of Science, Bangalore
+        <span class="meta">Is a one-dimensional Fermi gas with spin-orbit coupling, Zeeman field and intrinsic attractive interactions truly topological?</span><span class="tags"><button type="button" class="tag" data-tag="topology">Topology and Majorana modes</button><button type="button" class="tag" data-tag="pairing">Pairing and superfluidity</button></span></li>
+      <li><span class="when">Mar 2019</span>Bose Fest, S. N. Bose National Centre for Basic Sciences, Kolkata
+        <span class="meta">Exotic phases of a one-dimensional Fermi gas in an optical lattice with spin-orbit coupling and a Zeeman field</span><span class="tags"><button type="button" class="tag" data-tag="topology">Topology and Majorana modes</button><button type="button" class="tag" data-tag="pairing">Pairing and superfluidity</button></span></li>
+      <li><span class="when">Dec 2018</span>Topological Aspects of Quantum Matter, Tata Institute of Fundamental Research, Mumbai
+        <span class="meta">Majorana modes in a one-dimensional Fermi gas with attractive interactions</span><span class="tags"><button type="button" class="tag" data-tag="topology">Topology and Majorana modes</button></span></li>
+      <li><span class="when">Aug 2018</span>Dipartimento di Fisica e Astronomia, Università degli Studi di Padova
+        <span class="meta">Majorana modes in a non-superconducting wire?</span><span class="tags"><button type="button" class="tag" data-tag="topology">Topology and Majorana modes</button></span></li>
+      <li><span class="when">Jul 2016</span>Senior fellowship seminar, S. N. Bose National Centre for Basic Sciences, Kolkata
+        <span class="meta">Correlated electrons on one-dimensional chains and their junctions</span><span class="tags"><button type="button" class="tag" data-tag="wires">Quantum wires</button></span></li>
+      <li><span class="when">Mar 2016</span>Bose Fest, S. N. Bose National Centre for Basic Sciences, Kolkata, Best Poster Award
+        <span class="meta">Dynamical properties of a Y-junction of spin-1/2 chains</span><span class="tags"><button type="button" class="tag" data-tag="wires">Quantum wires</button><button type="button" class="tag" data-tag="magnets">Quantum magnets</button></span></li>
+      <li><span class="when">Jul 2014</span>Master’s thesis seminar, S. N. Bose National Centre for Basic Sciences, Kolkata
+        <span class="meta">Response of a random-field Ising ferromagnet to plane and spherical travelling magnetic waves</span><span class="tags"><button type="button" class="tag" data-tag="magnets">Quantum magnets</button><button type="button" class="tag" data-tag="stochastic">Stochastic processes</button></span></li>
+      <li><span class="when">Dec 2013</span>Master’s project seminar, S. N. Bose National Centre for Basic Sciences, Kolkata
+        <span class="meta">Sandpile model on a scale-free network</span><span class="tags"><button type="button" class="tag" data-tag="stochastic">Stochastic processes</button></span></li>
+    </ul>
+  </section>
+
+  <section id="contact" class="reveal" aria-labelledby="contact-h">
+    <h2 id="contact-h">Contact</h2>
+    <p class="contact">
+      <a href="mailto:monalisasroy@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/monalisasroy">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=dZHej74AAAAJ&amp;hl=en">Google Scholar</a>
+      <a href="https://orcid.org/0000-0002-3678-763X">ORCID</a>
+      <a href="https://github.com/monalisasroy">GitHub</a>
+      <span class="addr">monalisasroy@gmail.com</span>
+    </p>
+    <p class="invite">If you are curious how a quantum or quantum-inspired idea might apply to your problems or your hardware, or simply curious about quantum, <a href="https://www.linkedin.com/in/monalisasroy">send me a message on LinkedIn</a> or <a href="mailto:monalisasroy@gmail.com">write to me</a>.</p>
+    <footer>Munich, Germany. Updated November 2026.</footer>
+  </section>
+
+</div>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
