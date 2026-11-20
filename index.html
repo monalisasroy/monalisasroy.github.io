@@ -16,9 +16,8 @@
 <meta property="og:image:alt" content="Monalisa Singh Roy, with a computed quantum light cone">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -29,7 +28,7 @@
     <a class="sec" href="#about">About</a>
     <a class="sec" href="#vision">Vision</a>
     <a class="sec" href="#research">Research</a>
-    <a class="sec" href="#papers">Papers</a>
+    <a class="sec" href="#resources">Resources</a>
     <a class="sec" href="#contact">Contact</a>
   </div>
 </nav>
@@ -53,6 +52,7 @@
 
   <section id="about" class="reveal" aria-labelledby="about-h">
     <h2 id="about-h">About</h2>
+    <p>I am a quantum physicist with a PhD in quantum many-body physics who develops quantum and tensor-network algorithms for simulations, optimisation problems, forecasting, and studying complex and emergent phenomena in both quantum and classical systems.</p>
     <p>Finding a low-cost route through a network, estimating the probability of a rare and extreme event, simulating a strongly correlated material: each of these means searching among possibilities whose number grows exponentially with the size of the problem. Tensor networks and certain quantum circuits can find and use the low-dimensional structure hidden inside that growth. I have developed these methods for more than ten years and applied them across quantum physics problems and in industry, in finance, logistics, mobility and energy.</p>
     <p>In my PhD, I wrote density-matrix renormalisation group (DMRG) codes from scratch for topological one-dimensional Fermi gases, frustrated spin chains and Y-junctions of quantum wires. During my postdoc I worked on entanglement dynamics under noise and measurement and on international collaborations on quantum caustics and monitored quantum circuits, and guided a master&rsquo;s project on neural-network error mitigation for near-term quantum circuits. My pre-PhD research was in nonequilibrium statistical physics: self-organised criticality, non-Markovian dynamics, cascade propagation on networks, avalanche and first-passage statistics, and heavy-tail fitting. These form the backbone to compute quantitative risk, to model contagion and systemic risk, and to estimate rare-event probabilities, in weather, finance and logistics alike.</p>
     <dl class="themes qa">
@@ -146,7 +146,7 @@
     <h3 class="sub" id="journey">Journey</h3>
     <ol class="timeline">
       <li><div class="span" aria-label="Apr 2025 to Now"><span class="to">Now</span><span class="bar" aria-hidden="true"></span><span class="from">Apr 2025</span></div><div class="what">Quantum Algorithms Engineer, <a href="https://www.planqc.eu">planqc</a>, Munich
-        <span class="meta">Quantum, quantum-inspired and hybrid optimisation: mathematical formulation, solver development, benchmarks against classical solvers, experiments on quantum hardware and a written recommendation of the method for each case. Optimisation work package of <a href="https://qci.dlr.de/en/d-fine-planqc-partner-support-qcmobility-for-more-efficient-and-reliable-rail-transport/">QCMobility</a>.</span></div></li>
+        <span class="meta">Quantum, quantum-inspired and hybrid optimisation: research and development of state-of-the-art quantum algorithms, heuristics and tensor-network methods; mathematical formulation of use cases; solver development and deployment; experiments and benchmarks against classical solvers; and an analysis, a recommendation and a report for each case. Proposals for new directions. Backends for the optimisation work package of <a href="https://qci.dlr.de/en/d-fine-planqc-partner-support-qcmobility-for-more-efficient-and-reliable-rail-transport/">QCMobility</a>. Focus areas: finance, logistics, mobility and many-body simulation.</span></div></li>
       <li><div class="span" aria-label="Jun 2021 to Mar 2025"><span class="to">Mar 2025</span><span class="bar" aria-hidden="true"></span><span class="from">Jun 2021</span></div><div class="what">Postdoctoral researcher, <a href="https://www.biu.ac.il">Bar-Ilan University</a>, Israel
         <span class="meta">In the groups of Prof. Jonathan Ruhman, Prof. Emanuele Dalla Torre and Prof. Efrat Shimshoni. Collaborations on stochastic resets and the dynamics they induce with Prof. Eli Barkai, Prof. Satya N. Majumdar and Prof. Manas Kulkarni, taken onto IBM superconducting qubits with Prof. Sabine Tornow at Forschungsinstitut CODE in Munich; and on quantum caustics with Prof. Duncan O&rsquo;Dell.</span></div></li>
       <li><div class="span" aria-label="Jan 2024 to Mar 2024"><span class="to">Mar 2024</span><span class="bar" aria-hidden="true"></span><span class="from">Jan 2024</span></div><div class="what">Visiting researcher, <a href="https://www.mpq.mpg.de">Max Planck Institute of Quantum Optics</a>, Garching
@@ -162,67 +162,14 @@
       <li><div class="span" aria-label="Until 2009"><span class="to">2009</span><span class="bar" aria-hidden="true"></span><span class="from"></span></div><div class="what">Kendriya Vidyalayas (KVs) across India, finishing school at KV Tagore Garden, New Delhi
         <span class="meta">Was interested in physics, economics and mass communication with equal probability until then. Measurement finally chose physics.</span></div></li>
     </ol>
-  </section>
-
-  <section id="papers" class="reveal" aria-labelledby="papers-h">
-    <h2 id="papers-h">Papers</h2>
-    <div class="tagbar" role="group" aria-label="Filter papers by subject"><button type="button" class="tag" data-tag="all" aria-pressed="true">All</button><button type="button" class="tag" data-tag="dynamics" aria-pressed="false">Quantum dynamics</button><button type="button" class="tag" data-tag="entanglement" aria-pressed="false">Entanglement</button><button type="button" class="tag" data-tag="hardware" aria-pressed="false">Quantum hardware</button><button type="button" class="tag" data-tag="stochastic" aria-pressed="false">Stochastic processes</button><button type="button" class="tag" data-tag="tensor" aria-pressed="false">Tensor networks</button><button type="button" class="tag" data-tag="pairing" aria-pressed="false">Pairing and superfluidity</button><button type="button" class="tag" data-tag="topology" aria-pressed="false">Topology and Majorana modes</button><button type="button" class="tag" data-tag="magnets" aria-pressed="false">Quantum magnets</button><button type="button" class="tag" data-tag="wires" aria-pressed="false">Quantum wires</button></div>
-    <ul class="refs" id="paperlist">
-      <li data-tags="entanglement stochastic dynamics hardware"><a href="https://arxiv.org/abs/2610.40638">Entanglement diagnostics of stochastic-resetting steady states: theory and measurement on superconducting qubits</a>
-        <span class="desc">Qubits reset at random settle into steady states on which three standard entanglement measures disagree. The gap between two of them equals the information one part of the system holds about the time since the last reset.</span>
-        <span class="meta">J. Murauer, S. Tornow, M. Kulkarni, E. Barkai, S. N. Majumdar, M. Singh Roy. arXiv:2610.40638.</span><span class="tags"><button type="button" class="tag" data-tag="entanglement">Entanglement</button><button type="button" class="tag" data-tag="stochastic">Stochastic processes</button><button type="button" class="tag" data-tag="dynamics">Quantum dynamics</button><button type="button" class="tag" data-tag="hardware">Quantum hardware</button></span></li>
-      <li data-tags="dynamics tensor"><a href="https://arxiv.org/abs/2410.06803">Universal scaling of quantum caustics in the dynamics of interacting particles</a>
-        <span class="desc">A disturbance spreading along a chain of interacting quantum particles has bright fringes at its front, a caustic. They follow a universal scaling law with exponent 2/3, predicted from optics and confirmed in simulations.</span>
-        <span class="meta">M. Singh Roy, J. Mumford, A. Ozer, O. Porat, D. H. J. O&#x27;Dell, E. G. Dalla Torre. Physical Review A 114, 022201.</span><span class="tags"><button type="button" class="tag" data-tag="dynamics">Quantum dynamics</button><button type="button" class="tag" data-tag="tensor">Tensor networks</button></span></li>
-      <li data-tags="pairing tensor"><a href="https://arxiv.org/abs/2108.03314">Fulde-Ferrell-Larkin-Ovchinnikov phase in interacting one-dimensional Fermi gas</a>
-        <span class="desc">Attracting fermions in one dimension, placed in a magnetic field, pair up with a net momentum, so that pairing and magnetism coexist. DMRG finds this Fulde-Ferrell-Larkin-Ovchinnikov phase over a wide range of conditions.</span>
-        <span class="meta">M. Singh Roy, M. Kumar. Physical Review B 110, 085159.</span><span class="tags"><button type="button" class="tag" data-tag="pairing">Pairing and superfluidity</button><button type="button" class="tag" data-tag="tensor">Tensor networks</button></span></li>
-      <li data-tags="topology pairing"><a href="https://arxiv.org/abs/1904.03660">Fermion parity gap and exponential ground state degeneracy of the one-dimensional Fermi gas with intrinsic attractive interaction</a>
-        <span class="desc">A trapped one-dimensional Fermi gas with spin-orbit coupling shows the degenerate ground states expected of Majorana modes. A single weak local impurity removes that protection, a caution for topological qubits on this platform.</span>
-        <span class="meta">M. Singh Roy, M. Kumar, J. D. Sau, S. Tewari. Physical Review B 102, 125135.</span><span class="tags"><button type="button" class="tag" data-tag="topology">Topology and Majorana modes</button><button type="button" class="tag" data-tag="pairing">Pairing and superfluidity</button></span></li>
-      <li data-tags="wires tensor"><a href="https://arxiv.org/abs/1912.13040">Tunneling density of states in Y junction of Tomonaga-Luttinger liquid wires: a density matrix renormalization group study</a>
-        <span class="desc">Where three interacting quantum wires meet, attraction drives the junction to a state the standard analytic method cannot describe, and DMRG shows that tunnelling into it is enhanced, for fermions and bosons alike.</span>
-        <span class="meta">M. Singh Roy, M. Kumar, S. Das. Physical Review B 102, 035130.</span><span class="tags"><button type="button" class="tag" data-tag="wires">Quantum wires</button><button type="button" class="tag" data-tag="tensor">Tensor networks</button></span></li>
-      <li data-tags="magnets tensor"><a href="https://arxiv.org/abs/2001.05384">Modeling the spin-Peierls transition of spin-1/2 chains with correlated states: J1-J2 model, CuGeO3 and TTF-CuS4C4(CF3)4</a>
-        <span class="desc">On cooling, a spin-Peierls chain distorts so that neighbouring spins pair up. A frustrated spin-chain model matches the measured magnetic response of CuGeO<sub>3</sub> and an organic compound, and gives the neutron spectra of CuGeO<sub>3</sub>.</span>
-        <span class="meta">S. K. Saha, M. Singh Roy, M. Kumar, Z. G. Soos. Physical Review B 101, 054411.</span><span class="tags"><button type="button" class="tag" data-tag="magnets">Quantum magnets</button><button type="button" class="tag" data-tag="tensor">Tensor networks</button></span></li>
-      <li data-tags="topology magnets"><a href="https://arxiv.org/abs/1711.01766">Characterization of Majorana-Ising phase transition in a helical liquid system</a>
-        <span class="desc">In a helical liquid, a one-dimensional system whose spin direction is locked to its direction of motion, a magnetic field can drive a transition to a phase that can host Majorana zero modes. The work locates that transition with several criteria that agree.</span>
-        <span class="meta">S. K. Saha, D. Dey, M. Singh Roy, S. Sarkar, M. Kumar. Journal of Magnetism and Magnetic Materials 475, 257.</span><span class="tags"><button type="button" class="tag" data-tag="topology">Topology and Majorana modes</button><button type="button" class="tag" data-tag="magnets">Quantum magnets</button></span></li>
-    </ul>
-    <p class="note">Full list on <a href="https://scholar.google.com/citations?user=dZHej74AAAAJ&amp;hl=en">Google Scholar</a>.</p>
-    <p class="span-note">These papers, and the work behind them, span statistical physics, condensed matter, quantum information and many-body physics, joined by simulation, from Monte Carlo and exact methods to tensor networks and quantum circuits. The applications of most interest are in logistics, energy, finance and new materials; in applied industrial research, they included the optimisation work of <a href="https://qci.dlr.de/en/d-fine-planqc-partner-support-qcmobility-for-more-efficient-and-reliable-rail-transport/">QCMobility</a>, testing quantum algorithms and benchmarking them vs. classical on real logistics and mobility data and problems.</p>
-
-    <h3 class="sub" id="collaborations">Collaborations</h3>
-    <div class="logos">
-      <img src="assets/img/logos/forschungsinstitut-code-universitat-der-bundeswehr-munchen.webp" alt="Forschungsinstitut CODE, Universität der Bundeswehr München" title="Forschungsinstitut CODE, Universität der Bundeswehr München">
-      <img src="assets/img/logos/bar-ilan-university.webp" alt="Bar-Ilan University" title="Bar-Ilan University">
-      <img src="assets/img/logos/universite-paris-saclay.webp" alt="Université Paris-Saclay" title="Université Paris-Saclay">
-      <img src="assets/img/logos/max-planck-institute-for-the-physics-of-complex-systems.webp" alt="Max Planck Institute for the Physics of Complex Systems" title="Max Planck Institute for the Physics of Complex Systems">
-      <img src="assets/img/logos/max-planck-institute-of-quantum-optics.webp" alt="Max Planck Institute of Quantum Optics" title="Max Planck Institute of Quantum Optics">
-      <img src="assets/img/logos/technical-university-of-munich.webp" alt="Technical University of Munich" title="Technical University of Munich">
-      <img src="assets/img/logos/munich-quantum-valley.webp" alt="Munich Quantum Valley" title="Munich Quantum Valley">
-      <img src="assets/img/logos/mcmaster-university.webp" alt="McMaster University" title="McMaster University">
-      <img src="assets/img/logos/university-of-oklahoma.webp" alt="University of Oklahoma" title="University of Oklahoma">
-      <img src="assets/img/logos/university-of-gottingen.webp" alt="University of Göttingen" title="University of Göttingen">
-      <img src="assets/img/logos/university-of-maryland.webp" alt="University of Maryland" title="University of Maryland">
-      <img src="assets/img/logos/clemson-university.webp" alt="Clemson University" title="Clemson University">
-      <img src="assets/img/logos/princeton-university.webp" alt="Princeton University" title="Princeton University">
-      <img src="assets/img/logos/international-centre-for-theoretical-physics.webp" alt="International Centre for Theoretical Physics" title="International Centre for Theoretical Physics">
-      <img src="assets/img/logos/university-of-padova.webp" alt="University of Padova" title="University of Padova">
-      <img src="assets/img/logos/university-of-calcutta.webp" alt="University of Calcutta" title="University of Calcutta">
-      <img src="assets/img/logos/s-n-bose-national-centre-for-basic-sciences.webp" alt="S. N. Bose National Centre for Basic Sciences" title="S. N. Bose National Centre for Basic Sciences">
-      <img src="assets/img/logos/indian-institute-of-science.webp" alt="Indian Institute of Science" title="Indian Institute of Science">
-      <img src="assets/img/logos/international-centre-for-theoretical-sciences.webp" alt="International Centre for Theoretical Sciences" title="International Centre for Theoretical Sciences">
-    </div>
 
     <h3 class="sub" id="presentations">Presentations</h3>
     <dl class="people venues">
-      <dt>Germany</dt><dd>Max Planck Institute of Quantum Optics, Max Planck Institute for the Physics of Complex Systems, Technical University of Munich, Georg-August-Universität Göttingen, Universität der Bundeswehr München, Fraunhofer-Gesellschaft, Munich Center for Quantum Science and Technology, Falling Walls Foundation</dd>
+      <dt>Germany</dt><dd>Universität der Bundeswehr München (UniBw M), Max Planck Institute of Quantum Optics (MPQ), Max Planck Institute for the Physics of Complex Systems (MPIPKS), Technical University of Munich (TUM), Georg-August-Universität Göttingen, Fraunhofer-Gesellschaft, Munich Center for Quantum Science and Technology, Falling Walls Foundation</dd>
       <dt>Italy</dt><dd>International Centre for Theoretical Physics, SISSA, Università degli Studi di Padova</dd>
-      <dt>Israel</dt><dd>Weizmann Institute of Science, Technion, Hebrew University of Jerusalem, Ben-Gurion University of the Negev</dd>
-      <dt>India</dt><dd>Indian Institute of Science, Tata Institute of Fundamental Research, S. N. Bose National Centre for Basic Sciences, Institute of Physics Bhubaneswar</dd>
-      <dt>Meetings</dt><dd>American Physical Society, German Physical Society, Israel Physical Society</dd>
+      <dt>Israel</dt><dd>Bar-Ilan University, Weizmann Institute of Science, Technion, Hebrew University of Jerusalem, Ben-Gurion University of the Negev</dd>
+      <dt>India</dt><dd>S. N. Bose National Centre for Basic Sciences, Indian Institute of Science (IISc), International Centre for Theoretical Sciences (ICTS), Tata Institute of Fundamental Research (TIFR), Saha Institute of Nuclear Physics (SINP), Institute of Physics (IOP) Bhubaneswar</dd>
+      <dt>Meetings</dt><dd>American Physical Society, German Physical Society, Israel Physical Society, German-Israeli Foundation (GIF)</dd>
     </dl>
     <p class="divider" aria-hidden="true">- - -</p>
     <ul class="refs talks">
@@ -275,18 +222,91 @@
       <li><span class="when">Jul 2014</span>Master’s thesis seminar, S. N. Bose National Centre for Basic Sciences, Kolkata
         <span class="meta">Sandpile model on scale-free networks</span><span class="tags"><button type="button" class="tag" data-tag="stochastic">Stochastic processes</button></span></li>
     </ul>
+
+    <h3 class="sub" id="collaborations">Collaborations</h3>
+    <div class="logos">
+      <img src="assets/img/logos/forschungsinstitut-code-universitat-der-bundeswehr-munchen.webp" alt="Forschungsinstitut CODE, Universität der Bundeswehr München" title="Forschungsinstitut CODE, Universität der Bundeswehr München">
+      <img src="assets/img/logos/bar-ilan-university.webp" alt="Bar-Ilan University" title="Bar-Ilan University">
+      <img src="assets/img/logos/universite-paris-saclay.webp" alt="Université Paris-Saclay" title="Université Paris-Saclay">
+      <img src="assets/img/logos/max-planck-institute-for-the-physics-of-complex-systems.webp" alt="Max Planck Institute for the Physics of Complex Systems" title="Max Planck Institute for the Physics of Complex Systems">
+      <img src="assets/img/logos/max-planck-institute-of-quantum-optics.webp" alt="Max Planck Institute of Quantum Optics" title="Max Planck Institute of Quantum Optics">
+      <img src="assets/img/logos/technical-university-of-munich.webp" alt="Technical University of Munich" title="Technical University of Munich">
+      <img src="assets/img/logos/munich-quantum-valley.webp" alt="Munich Quantum Valley" title="Munich Quantum Valley">
+      <img src="assets/img/logos/mcmaster-university.webp" alt="McMaster University" title="McMaster University">
+      <img src="assets/img/logos/university-of-oklahoma.webp" alt="University of Oklahoma" title="University of Oklahoma">
+      <img src="assets/img/logos/university-of-gottingen.webp" alt="University of Göttingen" title="University of Göttingen">
+      <img src="assets/img/logos/university-of-maryland.webp" alt="University of Maryland" title="University of Maryland">
+      <img src="assets/img/logos/clemson-university.webp" alt="Clemson University" title="Clemson University">
+      <img src="assets/img/logos/princeton-university.webp" alt="Princeton University" title="Princeton University">
+      <img src="assets/img/logos/international-centre-for-theoretical-physics.webp" alt="International Centre for Theoretical Physics" title="International Centre for Theoretical Physics">
+      <img src="assets/img/logos/university-of-padova.webp" alt="University of Padova" title="University of Padova">
+      <img src="assets/img/logos/university-of-calcutta.webp" alt="University of Calcutta" title="University of Calcutta">
+      <img src="assets/img/logos/s-n-bose-national-centre-for-basic-sciences.webp" alt="S. N. Bose National Centre for Basic Sciences" title="S. N. Bose National Centre for Basic Sciences">
+      <img src="assets/img/logos/indian-institute-of-science.webp" alt="Indian Institute of Science" title="Indian Institute of Science">
+      <img src="assets/img/logos/international-centre-for-theoretical-sciences.webp" alt="International Centre for Theoretical Sciences" title="International Centre for Theoretical Sciences">
+    </div>
+  </section>
+
+  <section id="resources" class="reveal" aria-labelledby="resources-h">
+    <h2 id="resources-h">Resources</h2>
+    <h3 class="sub first" id="papers">Papers</h3>
+    <div class="tagbar" role="group" aria-label="Filter papers by subject"><button type="button" class="tag" data-tag="all" aria-pressed="true">All</button><button type="button" class="tag" data-tag="dynamics" aria-pressed="false">Quantum dynamics</button><button type="button" class="tag" data-tag="entanglement" aria-pressed="false">Entanglement</button><button type="button" class="tag" data-tag="hardware" aria-pressed="false">Quantum hardware</button><button type="button" class="tag" data-tag="stochastic" aria-pressed="false">Stochastic processes</button><button type="button" class="tag" data-tag="tensor" aria-pressed="false">Tensor networks</button><button type="button" class="tag" data-tag="pairing" aria-pressed="false">Pairing and superfluidity</button><button type="button" class="tag" data-tag="topology" aria-pressed="false">Topology and Majorana modes</button><button type="button" class="tag" data-tag="magnets" aria-pressed="false">Quantum magnets</button><button type="button" class="tag" data-tag="wires" aria-pressed="false">Quantum wires</button></div>
+    <ul class="refs" id="paperlist">
+      <li data-tags="entanglement stochastic dynamics hardware"><a href="https://arxiv.org/abs/2610.40638">Entanglement diagnostics of stochastic-resetting steady states: theory and measurement on superconducting qubits</a>
+        <span class="desc">Qubits reset at random settle into steady states on which three standard entanglement measures disagree. The gap between two of them equals the information one part of the system holds about the time since the last reset.</span>
+        <span class="meta">J. Murauer, S. Tornow, M. Kulkarni, E. Barkai, S. N. Majumdar, M. Singh Roy. arXiv:2610.40638.</span><span class="tags"><button type="button" class="tag" data-tag="entanglement">Entanglement</button><button type="button" class="tag" data-tag="stochastic">Stochastic processes</button><button type="button" class="tag" data-tag="dynamics">Quantum dynamics</button><button type="button" class="tag" data-tag="hardware">Quantum hardware</button></span></li>
+      <li data-tags="dynamics tensor"><a href="https://arxiv.org/abs/2410.06803">Universal scaling of quantum caustics in the dynamics of interacting particles</a>
+        <span class="desc">A disturbance spreading along a chain of interacting quantum particles has bright fringes at its front, a caustic. They follow a universal scaling law with exponent 2/3, predicted from optics and confirmed in simulations.</span>
+        <span class="meta">M. Singh Roy, J. Mumford, A. Ozer, O. Porat, D. H. J. O&#x27;Dell, E. G. Dalla Torre. Physical Review A 114, 022201.</span><span class="tags"><button type="button" class="tag" data-tag="dynamics">Quantum dynamics</button><button type="button" class="tag" data-tag="tensor">Tensor networks</button></span></li>
+      <li data-tags="pairing tensor"><a href="https://arxiv.org/abs/2108.03314">Fulde-Ferrell-Larkin-Ovchinnikov phase in interacting one-dimensional Fermi gas</a>
+        <span class="desc">Attracting fermions in one dimension, placed in a magnetic field, pair up with a net momentum, so that pairing and magnetism coexist. DMRG finds this Fulde-Ferrell-Larkin-Ovchinnikov phase over a wide range of conditions.</span>
+        <span class="meta">M. Singh Roy, M. Kumar. Physical Review B 110, 085159.</span><span class="tags"><button type="button" class="tag" data-tag="pairing">Pairing and superfluidity</button><button type="button" class="tag" data-tag="tensor">Tensor networks</button></span></li>
+      <li data-tags="topology pairing"><a href="https://arxiv.org/abs/1904.03660">Fermion parity gap and exponential ground state degeneracy of the one-dimensional Fermi gas with intrinsic attractive interaction</a>
+        <span class="desc">A trapped one-dimensional Fermi gas with spin-orbit coupling shows the degenerate ground states expected of Majorana modes. A single weak local impurity removes that protection, a caution for topological qubits on this platform.</span>
+        <span class="meta">M. Singh Roy, M. Kumar, J. D. Sau, S. Tewari. Physical Review B 102, 125135.</span><span class="tags"><button type="button" class="tag" data-tag="topology">Topology and Majorana modes</button><button type="button" class="tag" data-tag="pairing">Pairing and superfluidity</button></span></li>
+      <li data-tags="wires tensor"><a href="https://arxiv.org/abs/1912.13040">Tunneling density of states in Y junction of Tomonaga-Luttinger liquid wires: a density matrix renormalization group study</a>
+        <span class="desc">Where three interacting quantum wires meet, attraction drives the junction to a state the standard analytic method cannot describe, and DMRG shows that tunnelling into it is enhanced, for fermions and bosons alike.</span>
+        <span class="meta">M. Singh Roy, M. Kumar, S. Das. Physical Review B 102, 035130.</span><span class="tags"><button type="button" class="tag" data-tag="wires">Quantum wires</button><button type="button" class="tag" data-tag="tensor">Tensor networks</button></span></li>
+      <li data-tags="magnets tensor"><a href="https://arxiv.org/abs/2001.05384">Modeling the spin-Peierls transition of spin-1/2 chains with correlated states: J1-J2 model, CuGeO3 and TTF-CuS4C4(CF3)4</a>
+        <span class="desc">On cooling, a spin-Peierls chain distorts so that neighbouring spins pair up. A frustrated spin-chain model matches the measured magnetic response of CuGeO<sub>3</sub> and an organic compound, and gives the neutron spectra of CuGeO<sub>3</sub>.</span>
+        <span class="meta">S. K. Saha, M. Singh Roy, M. Kumar, Z. G. Soos. Physical Review B 101, 054411.</span><span class="tags"><button type="button" class="tag" data-tag="magnets">Quantum magnets</button><button type="button" class="tag" data-tag="tensor">Tensor networks</button></span></li>
+      <li data-tags="topology magnets"><a href="https://arxiv.org/abs/1711.01766">Characterization of Majorana-Ising phase transition in a helical liquid system</a>
+        <span class="desc">In a helical liquid, a one-dimensional system whose spin direction is locked to its direction of motion, a magnetic field can drive a transition to a phase that can host Majorana zero modes. The work locates that transition with several criteria that agree.</span>
+        <span class="meta">S. K. Saha, D. Dey, M. Singh Roy, S. Sarkar, M. Kumar. Journal of Magnetism and Magnetic Materials 475, 257.</span><span class="tags"><button type="button" class="tag" data-tag="topology">Topology and Majorana modes</button><button type="button" class="tag" data-tag="magnets">Quantum magnets</button></span></li>
+    </ul>
+    <p class="note">Full list on <a href="https://scholar.google.com/citations?user=dZHej74AAAAJ&amp;hl=en">Google Scholar</a>.</p>
+    <p class="span-note">These papers, and the work behind them, span statistical physics, condensed matter, quantum information and many-body physics, joined by simulation, from Monte Carlo and exact methods to tensor networks and quantum circuits. The applications of most interest are in logistics, energy, finance and new materials; in applied industrial research, they included the optimisation work of <a href="https://qci.dlr.de/en/d-fine-planqc-partner-support-qcmobility-for-more-efficient-and-reliable-rail-transport/">QCMobility</a>, testing quantum algorithms and benchmarking them vs. classical on real logistics and mobility data and problems.</p>
+
+    <h3 class="sub" id="github">GitHub</h3>
+    <dl class="themes areas repos">
+      <div>
+      <dt><a href="https://github.com/monalisasroy/QuantumCaustics.jl">QuantumCaustics.jl</a></dt>
+      <dd>
+        <a class="herolink" href="https://github.com/monalisasroy/QuantumCaustics.jl#readme"><video class="hero" src="assets/media/quantumcaustics-jl.mp4" poster="assets/media/quantumcaustics-jl_poster.webp" width="720" height="418" autoplay muted loop playsinline preload="metadata" aria-label="Animation: after one spin is flipped at the centre of a chain of 79 spins, its effect spreads outward inside a light cone, with bright and dark fringes at its edges"></video></a>
+        <p>The light that dances on the floor of a swimming pool, and the patterns it makes beside a glass of water, are “caustics”, where light bent by a curved surface gathers into bright lines. Flip one spin in a chain of interacting spins, and the flip spreads through the chain as a wave whose front focuses into a caustic with fringes of its own. This package follows the spreading of such quantum caustics in chains of several hundred spins with tensor networks. It can check every run against an exact calculation on small chains, and gives the expected caustics pattern when the same dynamics is run on a quantum computer.</p>
+        <p class="meta">Julia and ITensor. Apache 2.0. The code behind <a href="https://journals.aps.org/pra/abstract/10.1103/zxz5-9ghf">Phys. Rev. A 114, 022201 (2026)</a>. <a href="https://github.com/monalisasroy/QuantumCaustics.jl#readme">README</a></p>
+      </dd>
+      </div>
+      <div>
+      <dt><a href="https://github.com/monalisasroy/MarkovMPS">MarkovMPS</a></dt>
+      <dd>
+        <a class="herolink" href="https://github.com/monalisasroy/MarkovMPS#readme"><video class="hero" src="assets/media/markovmps.mp4" poster="assets/media/markovmps_poster.webp" width="720" height="345" autoplay muted loop playsinline preload="metadata" aria-label="Animation: random walks run one after another until each first reaches a barrier, and avalanches on a sandpile one after another, while the distributions of arrival times and avalanche sizes build below them"></video></a>
+        <p>A walker who steps left or right at random, as a very drunk person might, reaches one end of a street sooner or later. One grain dropped on a pile of sand can likewise set off an avalanche that is small one time and very large the next. No two runs are alike, yet the arrival times and the avalanche sizes follow definite probabilities. The package uses a tensor network to compute these probabilities, instead of independently following every path the walker or the pile can take, whose number multiplies with every step; its results can be compared with exact answers on small systems and with Monte Carlo simulations over many runs of this dynamics.</p>
+        <p class="meta">Julia and Python, two independent pipelines. Apache 2.0. Version 1.0.0. <a href="https://github.com/monalisasroy/MarkovMPS#readme">README</a></p>
+      </dd>
+      </div>
+    </dl>
+    <p class="note">All public repositories on <a href="https://github.com/monalisasroy">GitHub</a>.</p>
   </section>
 
   <section id="contact" class="reveal" aria-labelledby="contact-h">
     <h2 id="contact-h">Contact</h2>
     <p class="contact">
-      <a href="mailto:monalisasroy@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/monalisasroy">LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=dZHej74AAAAJ&amp;hl=en">Google Scholar</a>
       <a href="https://github.com/monalisasroy">GitHub</a>
-      <span class="addr">monalisasroy@gmail.com</span>
     </p>
-    <p class="invite">If you are curious how a quantum or quantum-inspired idea might apply to your problems or your hardware, or simply curious about quantum, <a href="https://www.linkedin.com/in/monalisasroy">send me a message on LinkedIn</a> or <a href="mailto:monalisasroy@gmail.com">write to me</a>.</p>
+    <p class="invite">If you are curious how a quantum or quantum-inspired idea might apply to your problems or your hardware, or simply curious about quantum, <a href="https://www.linkedin.com/in/monalisasroy">send me a message on LinkedIn</a>.</p>
     <footer>Munich, Germany. Updated November 2026.</footer>
   </section>
 
