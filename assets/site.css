@@ -1,3 +1,7 @@
+@font-face { font-family: "Spectral"; font-style: normal; font-weight: 300; font-display: swap; src: url("fonts/Spectral-Light.woff2") format("woff2"); }
+@font-face { font-family: "Spectral"; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/Spectral-Regular.woff2") format("woff2"); }
+@font-face { font-family: "Spectral"; font-style: italic; font-weight: 400; font-display: swap; src: url("fonts/Spectral-Italic.woff2") format("woff2"); }
+@font-face { font-family: "Spectral"; font-style: normal; font-weight: 600; font-display: swap; src: url("fonts/Spectral-SemiBold.woff2") format("woff2"); }
 :root {
   --bg:         #0d0d11;
   --ink:        #e4e9ea;
@@ -96,7 +100,7 @@ dl.areas > div:nth-child(even) { margin-left: auto; }
 dl.areas > div:last-child { margin-bottom: 0; }
 dl.areas dt, dl.areas dt:first-child { margin: 0 0 0.45rem; }
 dl.areas dd { margin: 0; padding-left: 1rem; }
-@media (min-width: 601px) { #research > h2 { text-align: center; } }
+@media (min-width: 601px) { #research > h2, #github { text-align: center; } }
 @media (min-width: 1000px) { dl.areas { margin: 0 -4rem; } }
 @media (max-width: 600px) {
   dl.areas::before { left: 0.45rem; }
@@ -176,3 +180,11 @@ footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--rule
 .reveal { opacity: 0; transform: translateY(10px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .reveal.seen { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+/* Resources: Papers first under the heading, then GitHub, whose cards follow the Research cards and lead with each README's own animation or image */
+h3.sub.first { margin-top: 0; padding-top: 0; border-top: none; }
+dl.repos dd { padding-left: 0; }
+dl.repos dt a { color: var(--ink); border-bottom-color: var(--accent-dim); }
+dl.repos a.herolink { display: block; border: none; }
+dl.repos .hero { display: block; width: 100%; height: auto; border-radius: 10px; margin: 0.25rem 0 0.9rem; background: #0d0d11; }
+dl.repos .meta { margin-bottom: 0; }

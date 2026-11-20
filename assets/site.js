@@ -67,7 +67,7 @@
       entries.forEach(function (e) {
         if (e.isIntersecting) { e.target.classList.add("seen"); io.unobserve(e.target); }
       });
-    }, { rootMargin: "0px 0px -10% 0px", threshold: 0.06 });
+    }, { rootMargin: "0px 0px -10% 0px", threshold: 0 });
     items.forEach(function (el) { io.observe(el); });
   }
   var links = Array.prototype.slice.call(document.querySelectorAll("nav.bar a.sec"));
@@ -111,5 +111,12 @@
   });
   Array.prototype.slice.call(document.querySelectorAll("a[data-goto]")).forEach(function (a) {
     a.addEventListener("click", function (ev) { ev.preventDefault(); go(a.getAttribute("data-goto")); });
+  });
+})();
+
+(function () {
+  var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  Array.prototype.slice.call(document.querySelectorAll("video.hero")).forEach(function (v) {
+    if (still) { v.removeAttribute("autoplay"); v.pause(); }
   });
 })();
