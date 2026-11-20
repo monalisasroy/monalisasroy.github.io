@@ -45,6 +45,5 @@ The full list is on [Google Scholar](https://scholar.google.com/citations?user=d
 
 ## Contact
 
-If you are curious how a quantum or quantum-inspired idea might apply to your problems or your hardware, or simply curious about quantum, send me a message on [LinkedIn](https://www.linkedin.com/in/monalisasroy) or write to monalisasroy@gmail.com.
+If you are curious how a quantum or quantum-inspired idea might apply to your problems or your hardware, or simply curious about quantum, send me a message on [LinkedIn](https://www.linkedin.com/in/monalisasroy).
 
-This repository serves the website through GitHub Pages.
