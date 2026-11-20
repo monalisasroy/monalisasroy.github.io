@@ -6,6 +6,8 @@ Quantum and quantum-inspired solutions for simulations, optimisation, forecastin
 
 ![A single flipped spin spreading along a chain of 121 sites as time runs to the right, forming a light cone with bright fringes at its edges](https://raw.githubusercontent.com/monalisasroy/monalisasroy.github.io/gh-pages/assets/img/social.png)
 
+I am a quantum physicist with a PhD in quantum many-body physics who develops quantum and tensor-network algorithms for simulations, optimisation problems, forecasting, and studying complex and emergent phenomena in both quantum and classical systems.
+
 Finding a low-cost route through a network, estimating the probability of a rare and extreme event, simulating a strongly correlated material: each of these means searching among possibilities whose number grows exponentially with the size of the problem. Tensor networks and certain quantum circuits can find and use the low-dimensional structure hidden inside that growth. I have developed these methods for more than ten years and applied them across quantum physics problems and in industry, in finance, logistics, mobility and energy.
 
 ## Why quantum
